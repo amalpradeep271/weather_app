@@ -55,35 +55,35 @@ class Current {
     required this.gustKph,
   });
 
-  final int? lastUpdatedEpoch;
-  final String? lastUpdated;
-  final double? tempC;
-  final double? tempF;
-  final int? isDay;
-  final Condition? condition;
-  final double? windMph;
-  final double? windKph;
-  final int? windDegree;
-  final String? windDir;
-  final int? pressureMb;
-  final double? pressureIn;
-  final int? precipMm;
-  final int? precipIn;
-  final int? humidity;
-  final int? cloud;
-  final double? feelslikeC;
-  final double? feelslikeF;
-  final double? windchillC;
-  final double? windchillF;
-  final double? heatindexC;
-  final double? heatindexF;
-  final double? dewpointC;
-  final double? dewpointF;
-  final int? visKm;
-  final int? visMiles;
-  final double? uv;
-  final double? gustMph;
-  final int? gustKph;
+  dynamic lastUpdatedEpoch;
+  String? lastUpdated;
+  dynamic tempC;
+  dynamic tempF;
+  dynamic isDay;
+  Condition? condition;
+  dynamic windMph;
+  dynamic windKph;
+  dynamic windDegree;
+  String? windDir;
+  dynamic pressureMb;
+  dynamic pressureIn;
+  dynamic precipMm;
+  dynamic precipIn;
+  dynamic humidity;
+  dynamic cloud;
+  dynamic feelslikeC;
+  dynamic feelslikeF;
+  dynamic windchillC;
+  dynamic windchillF;
+  dynamic heatindexC;
+  dynamic heatindexF;
+  dynamic dewpointC;
+  dynamic dewpointF;
+  dynamic visKm;
+  dynamic visMiles;
+  dynamic uv;
+  dynamic gustMph;
+  dynamic gustKph;
 
   factory Current.fromJson(Map<String, dynamic> json) {
     return Current(
@@ -128,7 +128,7 @@ class Condition {
 
   final String? text;
   final String? icon;
-  final int? code;
+  final dynamic code;
 
   factory Condition.fromJson(Map<String, dynamic> json) {
     return Condition(
@@ -154,10 +154,10 @@ class Location {
   final String? name;
   final String? region;
   final String? country;
-  final double? lat;
-  final double? lon;
+  final dynamic lat;
+  final dynamic lon;
   final String? tzId;
-  final int? localtimeEpoch;
+  final dynamic localtimeEpoch;
   final String? localtime;
 
   factory Location.fromJson(Map<String, dynamic> json) {

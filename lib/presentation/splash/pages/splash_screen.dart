@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/core/configs/theme/app_colors.dart';
 import 'package:weather_app/core/configs/theme/app_text_styles.dart';
+import 'package:weather_app/presentation/home/page/home_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -46,7 +47,14 @@ class SplashScreen extends StatelessWidget {
               ),
               SizedBox(height: 25),
               ElevatedButton(
-                 onPressed: () {}, child: Text('Get Started')),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
+                },
+                child: Text('Get Started'),
+              ),
             ],
           ),
         ),
